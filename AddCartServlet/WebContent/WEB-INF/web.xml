@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>servletSearch</servlet-name>
+		<servlet-class>com.jlc.servlets.SearchBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servletSearch</servlet-name>
+		<url-pattern>/searchbook.jlc</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addToCartServlet</servlet-name>
+		<servlet-class>com.jlc.servlets.AddToCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addToCartServlet</servlet-name>
+		<url-pattern>/addtocart.jlc</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>showCartServlet</servlet-name>
+		<servlet-class>com.jlc.servlets.ShowCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>showCartServlet</servlet-name>
+		<url-pattern>/showcart.jlc</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>removeCartServlet</servlet-name>
+		<servlet-class>com.jlc.servlets.RemoveFromCartServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>removeCartServlet</servlet-name>
+		<url-pattern>/removefromcart.jlc</url-pattern>
+	</servlet-mapping>
+</web-app>
