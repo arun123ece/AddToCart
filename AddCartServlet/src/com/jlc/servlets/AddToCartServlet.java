@@ -24,4 +24,8 @@ public class AddToCartServlet extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher("showbooks.jlc");
 		rd.forward(request, response);
 	}
+	public  static void m1(){
+		
+		System.out.println("Hello m1()");
+	}
 }
